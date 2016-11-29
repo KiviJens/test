@@ -15,14 +15,14 @@ echo -n "Do you wish to type message (y/n)? "
 read answer
 
 if echo "$answer" | grep -iq "^y" ;then
-	echo "Please type your message:"
+	echo "Please type in your message:"
 	read myMessage
 else
 	echo "Nein danke"
 fi
 
-echo $myDate
-echo $myMessage
+#echo $myDate
+#echo $myMessage
 
 ## create and push commit
 

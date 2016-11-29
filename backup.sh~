@@ -21,11 +21,11 @@ else
 	echo "Nein danke"
 fi
 
-echo $myDate
-echo $myMessage
+#echo $myDate
+#echo $myMessage
 
 ## create and push commit
 
-#git add .
+git add .
 git commit -m "$myDate $myMessage"
-#git push
+git push
