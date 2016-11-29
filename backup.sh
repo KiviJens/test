@@ -11,6 +11,7 @@ if [ $1 ]
 		message=$1
 fi
 
+echo $1
 echo $message
 
 ## create and push commit
