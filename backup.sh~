@@ -2,14 +2,16 @@
 
 echo 'commit'
 
-message=$(date)
+#message=$(date)
+
+message=`date +%Y-%m-%d`
 
 if [ $1 ]
 	then
 		message=$1
 fi
 
-echo message
+echo $message
 
 ## create and push commit
 
