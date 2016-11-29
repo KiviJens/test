@@ -4,7 +4,7 @@ echo 'commit'
 
 #message=$(date)
 
-message=`date +%Y-%m-%d`
+message=`date`
 
 if [ $1 ]
 	then
@@ -16,5 +16,5 @@ echo $message
 ## create and push commit
 
 git add .
-git commit -m "$message"
+git commit -m $message
 git push
