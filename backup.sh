@@ -1,24 +1,24 @@
 #!/bin/bash
 
-echo 'commit'
+#echo 'commit'
 
 #message=$(date)
-
-myDate=`date`
 
 #if [ $1 ]
 #	then
 #		message=$1
 #fi
 
+myDate=`date`
+
 echo -n "Do you wish to type message (y/n)? "
 read answer
 
 if echo "$answer" | grep -iq "^y" ;then
-	echo "Please type in your message:"
+	echo -n "Please type in your message: "
 	read myMessage
-else
-	echo "Nein danke"
+#else
+	#echo "Nein danke"
 fi
 
 #echo $myDate
