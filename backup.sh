@@ -20,7 +20,6 @@ if echo "$answer" | grep -iq "^y" ;then
 	message="$myDate $myMessage"
 else
 	message="$myDate"
-	#echo "Nein danke"
 fi
 
 #echo $myDate
@@ -28,6 +27,8 @@ fi
 
 ## create and push commit
 
+git status
 git add .
+git status
 git commit -m "$message"
 git push
