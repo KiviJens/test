@@ -2,14 +2,17 @@
 
 echo 'commit'
 
-message=$(date)
+#message=$(date)
 
-if [ $1 ]
-	then
-		message=$1
-fi
+#if [ $1 ]
+#	then
+#		message=$1
+#fi
 
-echo message
+set myMassege=%date:~6,4%-%date:+3,2%-%date:~0,2%
+echo myMassage
+
+#echo message
 
 ## create and push commit
 
