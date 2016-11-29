@@ -11,18 +11,21 @@ myDate=`date`
 #		message=$1
 #fi
 
-echo -n "Is this a good question (y/n)? "
+echo -n "Do you wish to type message (y/n)? "
 read answer
+
 if echo "$answer" | grep -iq "^y" ;then
-    echo "Ja bitte"
+	echo "Please type your message:"
+	read myMessage
 else
-    echo "Nein danke"
+	echo "Nein danke"
 fi
 
 echo $myDate
+echo $myMessage
 
 ## create and push commit
 
 git add .
-git commit -m "$myDate"
+git commit -m "$myDate $myMessage"
 git push
