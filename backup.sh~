@@ -17,7 +17,7 @@ read answer
 if echo "$answer" | grep -iq "^y" ;then
 	echo -n "Please type in your message: "
 	read myMessage
-#else
+else
 	#echo "Nein danke"
 fi
 

@@ -17,7 +17,9 @@ read answer
 if echo "$answer" | grep -iq "^y" ;then
 	echo -n "Please type in your message: "
 	read myMessage
-#else
+	message="$myDate $myMessage"
+else
+	message="$myDate"
 	#echo "Nein danke"
 fi
 
@@ -27,5 +29,5 @@ fi
 ## create and push commit
 
 git add .
-git commit -m "$myDate $myMessage"
+git commit -m "$message"
 git push
