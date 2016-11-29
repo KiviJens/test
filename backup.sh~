@@ -11,15 +11,6 @@ myDate=`date`
 #		message=$1
 #fi
 
-echo "Do you wish add massage?"
-
-select yn in "Yes" "No"; do
-	case $yn in
-		Yes ) echo "Ja bitte";;
-		No ) echo "Nein danke";;
-	esac
-done
-
 echo $myDate
 
 ## create and push commit
