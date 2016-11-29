@@ -15,7 +15,7 @@ echo -n "Do you wish to type message (y/n)? "
 read answer
 
 if echo "$answer" | grep -iq "^y" ;then
-	echo -n "Please type in your message:"
+	echo -n "Please type in your message: "
 	read myMessage
 #else
 	#echo "Nein danke"
